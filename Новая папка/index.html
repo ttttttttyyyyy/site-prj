@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GAME MALL — Игровой маркетплейс</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="logo">
+    <span class="logo-icon">🎮</span>
+    <span>GAME MALL</span>
+  </div>
+
+  <div class="search">
+    <input type="text" placeholder="Найти игру, консоль, девайс...">
+    <button>🔍</button>
+  </div>
+
+  <div class="actions">
+    <button class="icon-btn">
+      <span class="ico">👤</span>
+      <span>Войти</span>
+    </button>
+    <button class="icon-btn">
+      <span class="ico">❤️</span>
+      <span>Избранное</span>
+      <span class="badge">5</span>
+    </button>
+    <button class="icon-btn">
+      <span class="ico">🛒</span>
+      <span>Корзина</span>
+      <span class="badge">2</span>
+    </button>
+  </div>
+</header>
+
+<!-- CATEGORIES -->
+<nav class="categories">
+  <a href="#" class="cat active">🎮 Все</a>
+  <a href="#" class="cat">🎯 Консоли</a>
+  <a href="#" class="cat">💿 Игры</a>
+  <a href="#" class="cat">🖥️ ПК</a>
+  <a href="#" class="cat">⌨️ Клавиатуры</a>
+  <a href="#" class="cat">🖱️ Мышки</a>
+  <a href="#" class="cat">🎧 Наушники</a>
+  <a href="#" class="cat">🪑 Кресла</a>
+  <a href="#" class="cat">📱 Девайсы</a>
+</nav>
+
+<!-- MAIN -->
+<main class="main">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="filter-block">
+      <h4>Платформа</h4>
+      <label class="check"><input type="checkbox" checked> PlayStation</label>
+      <label class="check"><input type="checkbox"> Xbox</label>
+      <label class="check"><input type="checkbox"> Nintendo</label>
+      <label class="check"><input type="checkbox"> PC</label>
+    </div>
+
+    <div class="filter-block">
+      <h4>Цена, ₽</h4>
+      <div class="price-row">
+        <input type="number" placeholder="от">
+        <input type="number" placeholder="до">
+      </div>
+      <button class="apply">Применить</button>
+    </div>
+
+    <div class="filter-block">
+      <h4>Бренд</h4>
+      <label class="check"><input type="checkbox"> Sony</label>
+      <label class="check"><input type="checkbox"> Microsoft</label>
+      <label class="check"><input type="checkbox"> Razer</label>
+      <label class="check"><input type="checkbox"> Logitech</label>
+      <label class="check"><input type="checkbox"> HyperX</label>
+    </div>
+  </aside>
+
+  <!-- CONTENT -->
+  <section class="content">
+
+    <!-- SORT -->
+    <div class="sort-bar">
+      <h2>Игровые хиты <span>· 1248 товаров</span></h2>
+      <div class="sort-chips">
+        <button class="chip active">Популярное</button>
+        <button class="chip">Дешевле</button>
+        <button class="chip">Дороже</button>
+        <button class="chip">Новинки</button>
+      </div>
+    </div>
+
+    <!-- PRODUCTS -->
+    <div class="products">
+
+      <article class="product">
+        <div class="img">
+          <span class="discount">-15%</span>
+          <button class="fav">♡</button>
+          🎮
+        </div>
+        <div class="body">
+          <span class="brand">SONY</span>
+          <h4>PlayStation 5 Slim Digital 1TB</h4>
+          <div class="rating">★★★★★ <span>4.9 · 512</span></div>
+          <div class="prices">
+            <span class="now">54 990 ₽</span>
+            <span class="old">64 990 ₽</span>
+          </div>
+          <button class="buy">В корзину</button>
+        </div>
+      </article>
+
+      <article class="product">
+        <div class="img">
+          <span class="discount">-10%</span>
+          <button class="fav">♥</button>
+          🕹️
+        </div>
+        <div class="body">
+          <span class="brand">MICROSOFT</span>
+          <h4>Xbox Series X 1TB + геймпад</h4>
+          <div class="rating">★★★★★ <span>4.8 · 340</span></div>
+          <div class="prices">
+            <span class="now">49 990 ₽</span>
+            <span class="old">55 990 ₽</span>
+          </div>
+          <button class="buy">В корзину</button>
+        </div>
+      </article>
+
+      <article class="product">
+        <div class="img">
+          <span class="discount">-40%</span>
+          <button class="fav">♡</button>
+          💿
+        </div>
+        <div class="body">
+          <span class="brand">ROCKSTAR</span>
+          <h4>GTA VI — предзаказ, PS5</h4>
+          <div class="rating">★★★★★ <span>5.0 · 1204</span></div>
+          <div class="prices">
+            <span class="now">5 990 ₽</span>
+            <span class="old">9 990 ₽</span>
+          </div>
+          <button class="buy">В корзину</button>
+        </div>
+      </article>
+
+      <article class="product">
+        <div class="img">
+          <span class="discount">-25%</span>
+          <button class="fav">♡</button>
+          ⌨️
+        </div>
+        <div class="body">
+          <span class="brand">RAZER</span>
+          <h4>Razer BlackWidow V4 Pro RGB</h4>
+          <div class="rating">★★★★☆ <span>4.6 · 89</span></div>
+          <div class="prices">
+            <span class="now">14 990 ₽</span>
+            <span class="old">19 990 ₽</span>
+          </div>
+          <button class="buy">В корзину</button>
+        </div>
+      </article>
+
+      <article class="product">
+        <div class="img">
+          <span class="discount">-20%</span>
+          <button class="fav">♡</button>
+          🖱️
+        </div>
+        <div class="body">
+          <span class="brand">LOGITECH</span>
+          <h4>Logitech G Pro X Superlight 2</h4>
+          <div class="rating">★★★★★ <span>4.9 · 421</span></div>
+          <div class="prices">
+            <span class="now">11 990 ₽</span>
+            <span class="old">14 990 ₽</span>
+          </div>
+          <button class="buy">В корзину</button>
+        </div>
+      </article>
+
+      <article class="product">
+        <div class="img">
+          <span class="discount">-30%</span>
+          <button class="fav">♥</button>
+          🎧
+        </div>
+        <div class="body">
+          <span class="brand">HYPERX</span>
+          <h4>HyperX Cloud III Wireless</h4>
+          <div class="rating">★★★★★ <span>4.8 · 276</span></div>
+          <div class="prices">
+            <span class="now">12 490 ₽</span>
+            <span class="old">17 990 ₽</span>
+          </div>
+          <button class="buy">В корзину</button>
+        </div>
+      </article>
+
+      <article class="product">
+        <div class="img">
+          <span class="discount">-35%</span>
+          <button class="fav">♡</button>
+          🪑
+        </div>
+        <div class="body">
+          <span class="brand">DXRACER</span>
+          <h4>DXRacer Master Series XL</h4>
+          <div class="rating">★★★★☆ <span>4.5 · 134</span></div>
+          <div class="prices">
+            <span class="now">29 990 ₽</span>
+            <span class="old">45 990 ₽</span>
+          </div>
+          <button class="buy">В корзину</button>
+        </div>
+      </article>
+
+      <article class="product">
+        <div class="img">
+          <span class="discount">-12%</span>
+          <button class="fav">♡</button>
+          🖥️
+        </div>
+        <div class="body">
+          <span class="brand">NVIDIA</span>
+          <h4>RTX 4070 Super 12GB GDDR6X</h4>
+          <div class="rating">★★★★★ <span>4.9 · 198</span></div>
+          <div class="prices">
+            <span class="now">67 990 ₽</span>
+            <span class="old">76 990 ₽</span>
+          </div>
+          <button class="buy">В корзину</button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="col">
+    <h5>GAME MALL</h5>
+    <a href="#">О нас</a>
+    <a href="#">Вакансии</a>
+    <a href="#">Контакты</a>
+  </div>
+  <div class="col">
+    <h5>Покупателям</h5>
+    <a href="#">Доставка</a>
+    <a href="#">Оплата</a>
+    <a href="#">Возврат</a>
+  </div>
+  <div class="col">
+    <h5>Продавцам</h5>
+    <a href="#">Начать продавать</a>
+    <a href="#">Логистика</a>
+    <a href="#">API</a>
+  </div>
+  <div class="col">
+    <h5>Помощь</h5>
+    <a href="#">📞 8 800 GAME-999</a>
+    <a href="#">✉️ help@gamemall.ru</a>
+    <a href="#">💬 Telegram</a>
+  </div>
+</footer>
+
+</body>
+</html>
